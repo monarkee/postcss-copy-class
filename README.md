@@ -7,14 +7,22 @@
 [ci]:      https://travis-ci.org/davidhemphill/postcss-apply
 
 ```css
-.foo {
-    /* Input example */
+.red {
+    color: red;
+}
+
+.stop {
+    @apply .red;
 }
 ```
 
 ```css
-.foo {
-  /* Output example */
+.red {
+    color: red;
+}
+
+.stop {
+    color: red;
 }
 ```
 
