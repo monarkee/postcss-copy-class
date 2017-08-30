@@ -1,0 +1,37 @@
+{
+  "name": "postcss-apply",
+  "version": "0.0.0",
+  "description": "PostCSS plugin to apply classes as mixins",
+  "keywords": [
+    "postcss",
+    "css",
+    "postcss-plugin",
+    "less",
+    "sass"
+  ],
+  "author": "David Hemphill <davidlee.hemphill@gmail.com>",
+  "license": "MIT",
+  "repository": "davidhemphill/postcss-apply",
+  "bugs": {
+    "url": "https://github.com/davidhemphill/postcss-apply/issues"
+  },
+  "homepage": "https://github.com/davidhemphill/postcss-apply",
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "postcss": "^6.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-postcss": "^2.0.2",
+    "jest": "^20.0.0"
+  },
+  "scripts": {
+    "test": "jest && eslint *.js"
+  },
+  "eslintConfig": {
+    "extends": "eslint-config-postcss/es5",
+    "env": {
+      "jest": true
+    }
+  }
+}
