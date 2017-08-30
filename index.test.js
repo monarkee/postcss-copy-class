@@ -6,17 +6,17 @@ function run(input, opts) {
     return postcss([plugin(opts)]).process(input)
 }
 
-test('it applies previous classes', () => {
+test("it copies a class's declarations into itself", () => {
     output = '.a { color: red; } .b { color: red; }'
 
-    return run('.a { color: red; } .b { @apply .a; }', {}).then(result => {
+    return run('.a { color: red; } .b { @copy .a; }', {}).then(result => {
         expect(result.css).toEqual(output)
         expect(result.warnings().length).toBe(0)
     })
 })
 
 test('it fails if the class does not exist', () => {
-    run('.b { @apply .a; }', {}).catch(error => {
+    run('.b { @copy .a; }', {}).catch(error => {
         expect(error.reason).toEqual('No .a class found.')
     })
 })

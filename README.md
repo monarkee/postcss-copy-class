@@ -1,10 +1,10 @@
-# PostCSS Apply [![Build Status][ci-img]][ci]
+# PostCSS Copy Class [![Build Status][ci-img]][ci]
 
 [PostCSS] plugin to apply classes as mixins.
 
 [PostCSS]: https://github.com/postcss/postcss
-[ci-img]:  https://travis-ci.org/davidhemphill/postcss-apply.svg
-[ci]:      https://travis-ci.org/davidhemphill/postcss-apply
+[ci-img]:  https://travis-ci.org/davidhemphill/postcss-copy-class.svg
+[ci]:      https://travis-ci.org/davidhemphill/postcss-copy-class
 
 ```css
 .red {
@@ -12,7 +12,7 @@
 }
 
 .stop {
-    @apply .red;
+    @copy .red;
 }
 ```
 
@@ -29,7 +29,7 @@
 ## Usage
 
 ```js
-postcss([ require('postcss-apply') ])
+postcss([ require('postcss-copy-class') ])
 ```
 
 See [PostCSS] docs for examples for your environment.

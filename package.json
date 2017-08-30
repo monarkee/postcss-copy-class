@@ -1,5 +1,5 @@
 {
-  "name": "postcss-apply",
+  "name": "postcss-copy-class",
   "version": "0.0.0",
   "description": "PostCSS plugin to apply classes as mixins",
   "keywords": [
@@ -11,11 +11,11 @@
   ],
   "author": "David Hemphill <davidlee.hemphill@gmail.com>",
   "license": "MIT",
-  "repository": "davidhemphill/postcss-apply",
+  "repository": "davidhemphill/postcss-copy-class",
   "bugs": {
-    "url": "https://github.com/davidhemphill/postcss-apply/issues"
+    "url": "https://github.com/davidhemphill/postcss-copy-class/issues"
   },
-  "homepage": "https://github.com/davidhemphill/postcss-apply",
+  "homepage": "https://github.com/davidhemphill/postcss-copy-class",
   "dependencies": {
     "lodash": "^4.17.4",
     "postcss": "^6.0.1"

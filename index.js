@@ -1,11 +1,11 @@
 var postcss = require('postcss')
 var _ = require('lodash')
-var findMixin = require('./findMixin')
+var findClass = require('./findClass')
 
-module.exports = postcss.plugin('postcss-apply', function() {
+module.exports = postcss.plugin('postcss-copy-class', function() {
     return function(root, result) {
         root.walkRules(function(rule) {
-            rule.walkAtRules('apply', atRule => {
+            rule.walkAtRules('copy', atRule => {
                 const mixins = postcss.list.space(atRule.params)
 
                 const [
@@ -16,7 +16,7 @@ module.exports = postcss.plugin('postcss-apply', function() {
                 })
 
                 const decls = _.flatMap(classes, mixin => {
-                    return findMixin(root, mixin, () => {
+                    return findClass(root, mixin, () => {
                         throw atRule.error(`No ${mixin} class found.`)
                     })
                 })
