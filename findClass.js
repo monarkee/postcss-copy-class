@@ -1,10 +1,10 @@
 var _ = require('lodash')
 
-module.exports = function findClass(css, mixin, onError) {
+module.exports = function findClass(root, selector, onError) {
     const matches = []
 
-    css.walkRules(rule => {
-        if (rule.selectors.includes(mixin)) {
+    root.walkRules(rule => {
+        if (rule.selectors.includes(selector) && rule.parent.type == 'root') {
             matches.push(rule)
         }
     })
