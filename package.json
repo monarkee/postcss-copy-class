@@ -11,11 +11,11 @@
   ],
   "author": "David Hemphill <davidlee.hemphill@gmail.com>",
   "license": "MIT",
-  "repository": "davidhemphill/postcss-copy-class",
+  "repository": "monarkee/postcss-copy-class",
   "bugs": {
-    "url": "https://github.com/davidhemphill/postcss-copy-class/issues"
+    "url": "https://github.com/monarkee/postcss-copy-class/issues"
   },
-  "homepage": "https://github.com/davidhemphill/postcss-copy-class",
+  "homepage": "https://github.com/monarkee/postcss-copy-class",
   "dependencies": {
     "lodash": "^4.17.4",
     "postcss": "^6.0.1"
